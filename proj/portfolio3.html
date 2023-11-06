@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Meals On Wheels | Module 9 </title>
+        <link rel="stylesheet" href="../port.css">
+    </head> 
+
+    <body>
+
+        <div class="img-slider">
+            <div class="slide active">
+                <img src="../images/MOW/home.png">
+                <div class="info">
+                    <h2> Meals On Wheels </h2>
+                    <p> Home Page </p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="../images/MOW/reg.png">
+                <div class="info">
+                    <h2> Meals On Wheels </h2>
+                    <p> Register Page</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="../images/MOW/log.png">
+                <div class="info">
+                    <h2> Meals On Wheels </h2>
+                    <p> Login Page</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="../images/MOW.png">
+                <div class="info">
+                    <h2> Meals On Wheels </h2>
+                    <p> About Us Page </p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="../images/MOW/cont.png">
+                <div class="info">
+                    <h2> Meals On Wheels </h2>
+                    <p> Contact Us Page</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="../images/MOW/TNC.png">
+                <div class="info">
+                    <h2> Meals On Wheels </h2>
+                    <p> Terms And Conditions Page </p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="../images/MOW/PP.png">
+                <div class="info">
+                    <h2> Meals On Wheels </h2>
+                    <p> Privacy And Policy Page </p>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+            </div>
+            </div>
+            <a href="https://github.com/BDSE-0922-Group/DEA-SA" class="learn-more"> On Github </a>
+            <a href="../index.html" class="back"> Back</a>
+        <script type="text/javascript">
+            var slides = document.querySelectorAll('.slide');
+            var btns = document.querySelectorAll('.btn');
+            let currentSlide = 1; 
+
+            var manualNav = function(manual){
+                slides.forEach((slide) => {
+                    slide.classList.remove('active');
+
+                    btns.forEach((btn) => {
+                        btn.classList.remove('active');
+                    });
+                });
+
+                slides[manual].classList.add('active');
+                btns[manual].classList.add('active');
+            }
+
+            btns.forEach((btn, i)=>{
+                btn.addEventListener("click",() =>{
+                    manualNav(i);
+                    currentSlide=i;
+                })
+            });
+
+        var repeat = function(activeClass){
+            let active = document.getElementsByClassName('active');
+            let i = 1;
+
+            var repeater = () => {
+                setTimeout(function(){
+                   [...active].forEach((activeSlide) => {
+                    activeSlide.classList.remove('active');
+                   });
+
+                    slides[i].classList.add('active')
+                    btns[i].classList.add('active')
+                    i++;
+                    
+                    if (slides.length == i){
+                        i=0;
+                    }
+                    if(i >= slides.length){
+                       return; 
+                    }
+                repeater();
+                }, 10000);
+            }
+            repeater();
+        }
+        repeat();
+        </script>
+    </body>
+</html>
