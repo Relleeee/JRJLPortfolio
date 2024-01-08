@@ -349,6 +349,9 @@ span{
     color: var(--second-bg-color);
 }
 
+.contact {
+    background: var(--second-bg-color);
+}
 .contact h2{
     margin-bottom:3rem ;
 }
@@ -372,7 +375,7 @@ span{
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: .8rem;
     margin: .7rem 0 ;
 }
@@ -424,6 +427,61 @@ span{
     
 }
 
+.testimonial {
+    padding: 50px 0;
+    background-color: var(--bg-color); /* Set the background color as needed */
+}
+
+.testimonial-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--second-bg-color); /* Card background color */
+    border:.2rem solid var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 3rem 2rem 4rem;
+    text-align: center;
+    transition: .5s ease;
+}
+
+.testimonial-card:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.testimonial h2{
+    line-height: 1.2;
+}
+
+.testimonial-card p{
+    font-size: 1.6rem;
+    
+}
+
+.card-image img {
+    width: 100px; /* Adjust the image width as needed */
+    border-radius: 50%; /* Create a circular image */
+    margin-bottom: 15px;
+}
+
+.card-details h2 {
+    margin: 10px 0;
+    color: var(--text-color); /* Set text color */
+}
+.card-details p {
+    text-align: center;
+}
+.card-message p {
+    margin-top: 15px;
+    color: var(--text-color); /* Set text color */
+    text-align: justify;
+}
+
+
 /* Breakpoints */
 @media (max-width: 1200px) {
     html{
@@ -462,6 +520,9 @@ span{
         display: block;
     }
 
+    .testimonial-card{
+        max-width: 400px;
+    }
     .navbar{
         position: absolute;
         top:100%;
@@ -538,6 +599,9 @@ span{
     .contact form .input-box input{
         width: 100%;
     }
+    .testimonial-card{
+        max-width: 400px;
+    }
 }
 
 @media (max-width: 365px){
@@ -558,6 +622,7 @@ span{
         text-align: center;
         margin-top: 2rem;
     }
+
 }
 
 progress{
