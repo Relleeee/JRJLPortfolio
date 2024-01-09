@@ -487,58 +487,6 @@ span{
     text-align: center;
 }
 
-.work-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    max-width: 400px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: var(--bg-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: .5s ease;
-}
-.work-card:hover{
-    border-color: var(--main-color);
-    transform: scale(1.02);
-}
-
-.job-logo {
-    width: 100px;
-    margin-bottom: 10px;
-    border-radius: 30px;
-}
-
-.card-details
-
-.card-details h3 {
-    margin: 10px 0;
-}
-
-.card-duration p {
-    margin: 10px 0;
-    font-size: 1.6rem;
-}
-
-.card-skills p {
-    margin-top: 15px;
-    font-size: 1.6rem;
-}
-
-.card-skills ul {
-    padding: 0;
-    font-size: 1.6rem;
-}
-
-.card-skills li {
-    margin-bottom: 5px;
-    font-size: 1.6rem;
-}
-
 /* Breakpoints */
 @media (max-width: 1200px) {
     html{
