@@ -486,7 +486,15 @@ span{
     background-color: var(--second-bg-color);
     text-align: center;
 }
+.work-card {
+    max-width: 400px;
+    width: calc(100% - 40px); /* Adjust the width as needed */
+    margin-bottom: 20px;
+}
 
+@media screen and (min-width: 768px) {
+
+}
 /* Breakpoints */
 @media (max-width: 1200px) {
     html{
@@ -540,6 +548,11 @@ span{
         display: none;
     }
 
+    .work-card {
+        width: calc(50% - 40px);
+        flex-direction: row;
+    }
+    
     .navbar.active{
         display: block;
     }
