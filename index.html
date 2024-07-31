@@ -37,7 +37,6 @@
             <a href="#education">Education</a>
             <a href="#video-intro">Video</a>
             <a href="#testimonial">Testimonial</a>
-            <a href="#contact">Contact</a>
         </nav>
     </header>
 
@@ -54,8 +53,9 @@
                 <a href="https://www.instagram.com/j.rhei/"> <i class='bx bxl-instagram-alt'></i></a>
                 <a href="https://www.linkedin.com/in/joshua-liao-2637bb250/"> <i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/Relleeee"> <i class='bx bxl-github'></i></a>
+                <a href="mailto:joshualiao1211@gmail.com"> <i class='bx bxl-gmail'></i></a>
             </div>
-            <a href="https://educlaasglobal-my.sharepoint.com/:w:/g/personal/bdse-0922-068_learning_educlaas_com/EQxAUw_bWEZLjOlXcdo2SV0BNJAdZysSC5FAY755xE2ZYw?e=zZp07m"
+            <a href="https://educlaasglobal-my.sharepoint.com/:w:/g/personal/bdse-0922-068_learning_educlaas_com/ESiEhjQp59pFuA3zSxOPYjoB6djE9AhN02qFAQXikqQaHA?e=VtlIMz"
                 class="btn"> View CV</a>
         </div>
 
@@ -450,27 +450,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Contact -->
-    <section class="contact" id="contact" style="background: var(--bg-color);">
-        <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form method="post">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name" id="name" required>
-                <input type="email" placeholder="Email Address" id="email" required>
-            </div>
-
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number" id="phone" required>
-                <input type="text" placeholder="Email Subject" id="subject" required>
-            </div>
-
-            <textarea name="" cols="30" rows="10" placeholder="What's your question?" id="message" required></textarea>
-            <input type="submit" value="Send Message" class="btn" id="btn">
-        </form>
-    </section>
-
     <!-- Footer -->
 
     <footer class="footer">
@@ -491,27 +470,6 @@
     <!-- JScript -->
     <script src="script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        var btn = document.getElementById('btn');
-        btn.addEventListener('click', function (e) {
-            e.preventDefault();
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var phone = document.getElementById('phone').value;
-            var subject = document.getElementById('subject').value;
-            var message = document.getElementById('message').value;
-            var body = 'Name: ' + name + '<br/>Email: ' + email + '<br/>Phone: ' + phone + '<br/>Subject: ' + subject + '<br/>Message: ' + message;
-            Email.send({
-                SecureToken: "87e62aed-623e-4597-959b-c17884be9486",
-                To: 'Joshualiao1211@gmail.com',
-                From: "krschujo@gmail.com",
-                Subject: "Message from someone!",
-                Body: body
-            }).then(
-                message => alert(message)
-            );
-        })
-    </script>
 </body>
 
 </html>
