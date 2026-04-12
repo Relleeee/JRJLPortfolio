@@ -117,7 +117,7 @@ function botReply(userMessage) {
         case includesAny('work experience'):
             return "Joshua has worked as a software engineer intern at Smmile Digital, Chimes Consulting, Canary Intelligence and Analytics, and currently at HorecaBid for almost 3 months now!";
         case includesAny('single', 'taken', 'married', 'marital status'):
-            return "He has a girlfriend! ^-^";
+            return "He is single and currently focusing on his career and personal growth.";
         case includesAny('color'):
             return "Joshua's favorite color is red";
         default:
